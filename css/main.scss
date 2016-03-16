@@ -1,0 +1,389 @@
+/*variables*/
+$green: #27AD60; 
+$blue: #2C3E50;
+$gris: #C3C1C2;
+$orange: #8F5F38;
+$white: #fff;
+
+/*@mixin*/
+@mixin hrcommon {
+	width: 200px;
+	margin: 3% auto;
+}
+
+@mixin barra {
+	width: 437px;
+    height: 14px;
+    background-color: #E0D8D8;
+    padding: 3px;
+    margin: 3% 0 1.4%;
+ }
+@mixin barra-nivel {
+	height: 8px;
+	background-color: #E67E22;
+}
+
+@mixin color($c){
+	background-color:$c;
+}
+/*header*/
+.navbar-default {
+	background-color: $green;
+	padding: 1% 0 1% 0;
+	margin-bottom: 0px;
+	.navbar-nav > li {
+    padding-top: 2%; 
+}
+ }
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    &:hover {
+    	color: $blue;
+    	background-color: $green;
+    }
+}
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus {
+	&:hover {
+		background-color: $green;
+	}
+}
+
+/*banner*/
+.banner {
+	background-image: url("../img/carousel-bg.jpg");
+	background-position: center;
+	background-repeat:no-repeat;
+}
+.banner {
+	padding: 3% 10%;
+	h1 {
+    	font-size: 5em;
+    	margin-bottom: 3%;
+	}
+	p {
+	    font-size: 2em;
+	}
+}
+/*palet*/
+.none{
+	padding:0;
+	text-align:center;
+	height:150px;
+	margin-bottom:10px;
+}
+#palette{
+	h2, hr {
+		color: $blue;
+	}
+	.paletas{
+		.col-md-2{
+			@extend .none;
+		}
+		.caja1{
+			@include color(#69D2E7);
+		}
+		.caja2{
+			@include color(#E8B71A);
+		}
+		.caja3{
+			@include color(#F7EAC8);
+		}
+		.caja4{
+			@include color(#F38630);
+		}
+		.caja5{
+			@include color(#FA6900);
+		}
+	}
+	.one{
+		.caja6{
+			@include color(#E94C6F);
+		}
+		.caja7{
+			@include color(#542733);
+			color:white;
+		}
+		.caja8{
+			@include color(#5A6A62);
+		}
+		.caja9{
+			@include color(#C6D5CD);
+		}
+		.caja10{
+			@include color(#FDF200);
+		}
+	}
+	.two{
+		.caja1{
+			@include color(#DB3340);
+		}
+		.caja2{
+			@include color(#E8B71A);
+		}
+		.caja3{
+			@include color(#F7EAC8);
+		}
+		.caja4{
+			@include color(#1FDA9A);
+		}
+		.caja5{
+			@include color(#28ABE3);
+		}
+	}
+	.tree{
+		.caja1{
+			@include color(#588C73);
+		}
+		.caja2{
+			@include color(#F2E394);
+		}
+		.caja3{
+			@include color(#F2AE72);
+		}
+		.caja4{
+			@include color(#D96459);
+		}
+		.caja5{
+			@include color(#8C4646);
+		}
+	}
+	.for{
+		.caja1{
+			@include color(#D0C91F);
+		}
+		.caja2{
+			@include color(#85C4B9);
+		}
+		.caja3{
+			@include color(#008BBA);
+		}
+		.caja4{
+			@include color(#DF514C);
+		}
+		.caja5{
+			@include color(#DC403B);
+		}
+	}
+}
+/*about us*/
+.about-us {
+	background-color: $blue;
+	padding:9% 6%;
+	img {
+		width: 100%;
+	}
+}
+hr {
+	@include hrcommon;
+}
+.p-h {
+	padding: 0 10%;
+	.agency3 {
+		text-align: center;
+	}
+}
+.barras {
+	padding: 5% 0;
+	.barra {
+	@include barra;
+	}
+}
+.barra-nivel-html {
+	width: 416px;
+	@include barra-nivel;
+}
+.barra-nivel-css {
+	width: 388px;
+	@include barra-nivel;
+}
+.barra-nivel-js {
+	width: 243px;
+	@include barra-nivel;
+}
+.barra-nivel-php {
+	width: 290px;
+	@include barra-nivel;
+}
+.barra-nivel-psd {
+	width: 355px;
+	@include barra-nivel;
+}
+
+/*wahtwedo*/
+.wahtwedo {
+	background-color:$green;
+	padding:9% 6%;
+	p {
+		padding: 0% 9%;
+		color: $gris;
+	}
+}
+
+.box {
+	background-color: $green;
+	margin-top: 20%;
+	padding:1% 0 15% 0;
+	h3 {
+		font-size: 3em;	
+	}
+	hr {
+	border: $green 1px solid; 	
+	}
+	&:hover {
+		background-color:#2A7257;
+		hr{
+		border: #fff 1px solid;
+		}
+		h3{
+			color: $orange;
+		}
+		.box-icon {
+			background-color:$orange;
+			background-image: none;
+		    transform: rotate(20deg);
+		    transition: .3s ease-in-out;
+		}
+	}
+
+}
+.box-icon {
+	background-image: url("../img/icon-bg.png");
+	background-color:$blue;
+	width: 150px;
+	height: 150px;
+	margin:5% auto 8%;
+	background-size: 100%;
+	padding: 6%;
+}
+.hire {
+    padding-top: 9%;
+	a {
+	background-color: #443E44;
+    padding: 0.5% 1%;
+    font-size: 1.8em;
+    margin: auto;
+	}
+}
+.box-girl {
+	background-image: url("../img/team/1.jpg");
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    margin:20% auto 10%;
+    background-size: 150%;
+    background-position: center;  
+}
+.girl {
+	h5 {
+		color: #443E44;
+		border-bottom: dashed 1px #5E9C72;
+		padding-bottom:2%;
+		margin-bottom: 8%;
+	}
+	a {
+		color: $gris;
+		margin: 0 3px;
+	}
+}
+/*guranted*/
+.guranted {
+	background-color:$blue;
+	padding:9% 0%;
+}
+.price {
+	background-color:$blue;
+	margin-top: 50%;
+	border: 1px solid $green;
+	&:hover {
+	margin-top: 25%;
+	border: 3px solid $orange;
+	}
+	div {
+		padding: 10px 0px 1px;
+		margin: auto;
+		font-size: 1em;
+	}
+}
+.titleprice {
+	font-size: 2em;
+	}
+.bg-orange {
+	background-color: $orange;
+}
+.bg-green {
+	background-color: $green;
+}
+.bg-white {
+	background-color: $white;
+	color: $blue;
+}
+.boton {
+	padding: 20% !important;
+	text-align:center;
+	a {
+	background-color: #443E44;
+    padding:3% 5%;
+    font-size: 1.8em;
+	}
+}
+
+/*clients*/
+.clients {
+	background-color:$blue;
+	padding:9% 0%;
+}
+.parrafos {
+		margin-top: 3%;
+		color: $gris;
+		font-size: 1.5em;
+	.orange{
+		color: $orange;
+	}
+}
+/*get touch*/
+.touch {
+	background-color:$blue;
+	padding:9% 0%;
+
+}
+/*redes*/
+#icons{
+	box-shadow: inset  0px 7px 11px 0px rgba(0, 0, 0, 0.81);
+	background:url(../img/img-divider-img.jpg)repeat-y;
+	background-size:cover;
+	width:100%;
+	padding:13% 0;
+	a{
+		span{
+			padding:2%;
+			font-size: 6em;
+		}
+	}
+}
+#footer{
+	background-color:$green;
+	padding:5% 0;
+	hr{
+		border-color:white;
+		width:60px;
+	}
+	a{
+	span{
+		padding-right:2%;
+		}
+	}
+	.uno{
+		p{
+			padding-left:25%;
+		}
+	}
+	.flex-between{
+		p{
+			color:#433D43;
+			span{
+				color:white;
+			}
+		}
+	}
+}

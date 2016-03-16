@@ -1,0 +1,290 @@
+/*variables*/
+/*@mixin*/
+/*header*/
+.navbar-default {
+  background-color: #27AD60;
+  padding: 1% 0 1% 0;
+  margin-bottom: 0px; }
+  .navbar-default .navbar-nav > li {
+    padding-top: 2%; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff; }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #2C3E50;
+    background-color: #27AD60; }
+
+.navbar-default .navbar-brand:hover:hover,
+.navbar-default .navbar-brand:focus:hover {
+  background-color: #27AD60; }
+
+/*banner*/
+.banner {
+  background-image: url("../img/carousel-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.banner {
+  padding: 3% 10%; }
+  .banner h1 {
+    font-size: 5em;
+    margin-bottom: 3%; }
+  .banner p {
+    font-size: 2em; }
+
+/*palet*/
+.none, #palette .paletas .col-md-2 {
+  padding: 0;
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px; }
+
+#palette h2, #palette hr {
+  color: #2C3E50; }
+#palette .paletas .caja1 {
+  background-color: #69D2E7; }
+#palette .paletas .caja2 {
+  background-color: #E8B71A; }
+#palette .paletas .caja3 {
+  background-color: #F7EAC8; }
+#palette .paletas .caja4 {
+  background-color: #F38630; }
+#palette .paletas .caja5 {
+  background-color: #FA6900; }
+#palette .one .caja6 {
+  background-color: #E94C6F; }
+#palette .one .caja7 {
+  background-color: #542733;
+  color: white; }
+#palette .one .caja8 {
+  background-color: #5A6A62; }
+#palette .one .caja9 {
+  background-color: #C6D5CD; }
+#palette .one .caja10 {
+  background-color: #FDF200; }
+#palette .two .caja1 {
+  background-color: #DB3340; }
+#palette .two .caja2 {
+  background-color: #E8B71A; }
+#palette .two .caja3 {
+  background-color: #F7EAC8; }
+#palette .two .caja4 {
+  background-color: #1FDA9A; }
+#palette .two .caja5 {
+  background-color: #28ABE3; }
+#palette .tree .caja1 {
+  background-color: #588C73; }
+#palette .tree .caja2 {
+  background-color: #F2E394; }
+#palette .tree .caja3 {
+  background-color: #F2AE72; }
+#palette .tree .caja4 {
+  background-color: #D96459; }
+#palette .tree .caja5 {
+  background-color: #8C4646; }
+#palette .for .caja1 {
+  background-color: #D0C91F; }
+#palette .for .caja2 {
+  background-color: #85C4B9; }
+#palette .for .caja3 {
+  background-color: #008BBA; }
+#palette .for .caja4 {
+  background-color: #DF514C; }
+#palette .for .caja5 {
+  background-color: #DC403B; }
+
+/*about us*/
+.about-us {
+  background-color: #2C3E50;
+  padding: 9% 6%; }
+  .about-us img {
+    width: 100%; }
+
+hr {
+  width: 200px;
+  margin: 3% auto; }
+
+.p-h {
+  padding: 0 10%; }
+  .p-h .agency3 {
+    text-align: center; }
+
+.barras {
+  padding: 5% 0; }
+  .barras .barra {
+    width: 437px;
+    height: 14px;
+    background-color: #E0D8D8;
+    padding: 3px;
+    margin: 3% 0 1.4%; }
+
+.barra-nivel-html {
+  width: 416px;
+  height: 8px;
+  background-color: #E67E22; }
+
+.barra-nivel-css {
+  width: 388px;
+  height: 8px;
+  background-color: #E67E22; }
+
+.barra-nivel-js {
+  width: 243px;
+  height: 8px;
+  background-color: #E67E22; }
+
+.barra-nivel-php {
+  width: 290px;
+  height: 8px;
+  background-color: #E67E22; }
+
+.barra-nivel-psd {
+  width: 355px;
+  height: 8px;
+  background-color: #E67E22; }
+
+/*wahtwedo*/
+.wahtwedo {
+  background-color: #27AD60;
+  padding: 9% 6%; }
+  .wahtwedo p {
+    padding: 0% 9%;
+    color: #C3C1C2; }
+
+.box {
+  background-color: #27AD60;
+  margin-top: 20%;
+  padding: 1% 0 15% 0; }
+  .box h3 {
+    font-size: 3em; }
+  .box hr {
+    border: #27AD60 1px solid; }
+  .box:hover {
+    background-color: #2A7257; }
+    .box:hover hr {
+      border: #fff 1px solid; }
+    .box:hover h3 {
+      color: #8F5F38; }
+    .box:hover .box-icon {
+      background-color: #8F5F38;
+      background-image: none;
+      transform: rotate(20deg);
+      transition: .3s ease-in-out; }
+
+.box-icon {
+  background-image: url("../img/icon-bg.png");
+  background-color: #2C3E50;
+  width: 150px;
+  height: 150px;
+  margin: 5% auto 8%;
+  background-size: 100%;
+  padding: 6%; }
+
+.hire {
+  padding-top: 9%; }
+  .hire a {
+    background-color: #443E44;
+    padding: 0.5% 1%;
+    font-size: 1.8em;
+    margin: auto; }
+
+.box-girl {
+  background-image: url("../img/team/1.jpg");
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  margin: 20% auto 10%;
+  background-size: 150%;
+  background-position: center; }
+
+.girl h5 {
+  color: #443E44;
+  border-bottom: dashed 1px #5E9C72;
+  padding-bottom: 2%;
+  margin-bottom: 8%; }
+.girl a {
+  color: #C3C1C2;
+  margin: 0 3px; }
+
+/*guranted*/
+.guranted {
+  background-color: #2C3E50;
+  padding: 9% 0%; }
+
+.price {
+  background-color: #2C3E50;
+  margin-top: 50%;
+  border: 1px solid #27AD60; }
+  .price:hover {
+    margin-top: 25%;
+    border: 3px solid #8F5F38; }
+  .price div {
+    padding: 10px 0px 1px;
+    margin: auto;
+    font-size: 1em; }
+
+.titleprice {
+  font-size: 2em; }
+
+.bg-orange {
+  background-color: #8F5F38; }
+
+.bg-green {
+  background-color: #27AD60; }
+
+.bg-white {
+  background-color: #fff;
+  color: #2C3E50; }
+
+.boton {
+  padding: 20% !important;
+  text-align: center; }
+  .boton a {
+    background-color: #443E44;
+    padding: 3% 5%;
+    font-size: 1.8em; }
+
+/*clients*/
+.clients {
+  background-color: #2C3E50;
+  padding: 9% 0%; }
+
+.parrafos {
+  margin-top: 3%;
+  color: #C3C1C2;
+  font-size: 1.5em; }
+  .parrafos .orange {
+    color: #8F5F38; }
+
+/*get touch*/
+.touch {
+  background-color: #2C3E50;
+  padding: 9% 0%; }
+
+/*redes*/
+#icons {
+  box-shadow: inset 0px 7px 11px 0px rgba(0, 0, 0, 0.81);
+  background: url(../img/img-divider-img.jpg) repeat-y;
+  background-size: cover;
+  width: 100%;
+  padding: 13% 0; }
+  #icons a span {
+    padding: 2%;
+    font-size: 6em; }
+
+#footer {
+  background-color: #27AD60;
+  padding: 5% 0; }
+  #footer hr {
+    border-color: white;
+    width: 60px; }
+  #footer a span {
+    padding-right: 2%; }
+  #footer .uno p {
+    padding-left: 25%; }
+  #footer .flex-between p {
+    color: #433D43; }
+    #footer .flex-between p span {
+      color: white; }
+
+/*# sourceMappingURL=main.css.map */
